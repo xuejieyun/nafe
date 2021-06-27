@@ -1,0 +1,75 @@
+<!--<template>-->
+<!--    <input type="text">-->
+
+<!--</template>-->
+<!--<script>-->
+<!--    // var arr=[3,6,8,2,1,99,1,1,1];-->
+<!--    // arr.sort();-->
+<!--    // console.log(arr)-->
+<!--    // arr.sort(function(a,b){-->
+<!--    //     return b-a-->
+<!--    // })-->
+<!--    // console.log(arr)-->
+<!--    //-->
+<!--    // var arr2=[4,7,3,1,2,99,5];-->
+<!--    // for(var i=0;i<arr2.length-1;i++){-->
+<!--    //     for(var j=0;j<arr2.length-1-i;j++){-->
+<!--    //         if(arr2[j]>arr2[j+1]){-->
+<!--    //             var temp=arr2[j];-->
+<!--    //             arr2[j]=arr2[j+1];-->
+<!--    //             arr2[j+1]=temp-->
+<!--    //         }-->
+<!--    //     }-->
+<!--    //-->
+<!--    // }-->
+<!--    // console.log(arr2)-->
+
+
+<!--    // var arr3=[1,2,3,4,5,1];-->
+<!--    // var arr4=[];-->
+<!--    // for(var i=0;i<arr3.length-1;i++){-->
+<!--    //     if(arr4.indexOf(arr3[i]) == -1){-->
+<!--    //         arr4.push(arr3[i])-->
+<!--    //     }-->
+<!--    // }-->
+<!--    // console.log(arr4)-->
+<!--    //-->
+<!--    // var arr5=[1,2,3,4,5,1];-->
+<!--    // var item = new Set(arr5);-->
+<!--    // console.log(item)-->
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+</head>
+
+
+
+<body>
+<button>点我</button>
+<script>
+    var btn=document.querySelector("button");
+    function f1(){
+        var connt=1;
+        return function(){
+            connt++;
+            btn.innerHTML=connt;
+        }
+    }
+    var c=f1();
+    btn.onclick=function(){
+        c();
+    }
+
+
+</script>
+</body>
+</html>
